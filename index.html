@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.jpg" type="image/x-icon" />
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img class="brand" src="logo.jpg" alt="logo">Music App</li>
+            <li>Home</li>
+            <li>About</li>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Sounds-Track</h1>
+            <div class="songItem">
+                <img id="cover" src="cover.jpg" alt="1">
+                <span class="songName">Kesariya -Brahmastra</span>
+                <span class="songlistplay"><span class="timestamp">05:23 <i id="0"
+                            class="songItemPlay fa-sharp fa-solid fa-play play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img id="cover" src="cover.jpg" alt="1">
+                <span class="songName">Shrivalli</span>
+                <span class="songlistplay"><span class="timestamp">05:23 <i id="1"
+                            class="songItemPlay fa-sharp fa-solid fa-play play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img id="cover" src="cover.jpg" alt="1">
+                <span class="songName">Cover</span>
+                <span class="songlistplay"><span class="timestamp">05:23 <i id="2"
+                            class="songItemPlay fa-sharp fa-solid fa-play play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img id="cover" src="cover.jpg" alt="1">
+                <span class="songName">Dhokha</span>
+                <span class="songlistplay"><span class="timestamp">05:23 <i id="3"
+                            class="songItemPlay fa-sharp fa-solid fa-play play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img id="cover" src="cover.jpg" alt="1">
+                <span class="songName">Ratta Lambiyan</span>
+                <span class="songlistplay"><span class="timestamp">05:23 <i id="4"
+                            class="songItemPlay fa-sharp fa-solid fa-play play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img id="cover" src="cover.jpg" alt="1">
+                <span class="songName">Mehbooba -KGF</span>
+                <span class="songlistplay"><span class="timestamp">05:23 <i id="5"
+                            class="songItemPlay fa-sharp fa-solid fa-play play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img id="cover" src="cover.jpg" alt="1">
+                <span class="songName">Wind of Change -Marathi</span>
+                <span class="songlistplay"><span class="timestamp">05:23 <i id="6"
+                            class="songItemPlay fa-sharp fa-solid fa-play play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img id="cover" src="cover.jpg" alt="1">
+                <span class="songName">Yuntum -Marathi</span>
+                <span class="songlistplay"><span class="timestamp">05:23 <i id="7"
+                            class="songItemPlay fa-sharp fa-solid fa-play play"></i></span></span>
+            </div>
+        </div>
+        <div class="songBanner">
+
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="songInfo">
+            <br>
+            <p id="para"> -----</p>
+        </div>
+        <input type="range" name="range" id="progressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontsAwesome -->
+            <i class="fa-solid fa-backward-step play" id="previous"></i>
+            <i class="fa-sharp fa-solid fa-play play" id="masterPlay"></i>
+
+            <i class="fa-solid fa-forward-step play" id="next"></i>
+        </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/7f2f3ea2c7.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
