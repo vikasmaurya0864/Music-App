@@ -118,7 +118,7 @@ nav ul li{
     margin: -3px 0;
 }
 
-@media  (min-width: 360px){ 
+@media  (max-width: 360px){ 
     .songItem{
         display: flex;
         width: 69vw;
