@@ -1,6 +1,6 @@
 // Initialize the variables
 let songIndex = 0;
-let audioElement = new Audio('songs/1.mp3');
+let audioElement = new Audio('1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let progress;
 let myProgressBar = document.getElementById('progressBar');
@@ -12,15 +12,15 @@ let songItems = Array.from(document.getElementsByClassName('songItem'))
 
 
 let songs = [
-    {songName: "0.mp3", filePath: "songs/1.mp3", coverPath: "cover.jpg"},
-    {songName: "1.mp3", filePath: "songs/2.mp3", coverPath: "cover.jpg"},
+    {songName: "0.mp3", filePath: "1.mp3", coverPath: "cover.jpg"},
+    {songName: "1.mp3", filePath: "2.mp3", coverPath: "cover.jpg"},
     
-    {songName: "3.mp3", filePath: "songs/3.mp3", coverPath: "cover.jpg"},
-    {songName: "4.mp3", filePath: "songs/4.mp3", coverPath: "cover.jpg"},
-    {songName: "5.mp3", filePath: "songs/5.mp3", coverPath: "cover.jpg"},
-    {songName: "6.mp3", filePath: "songs/6.mp3", coverPath: "cover.jpg"},
-    {songName: "7.mp3", filePath: "songs/7.mp3", coverPath: "cover.jpg"},
-    {songName: "7.mp3", filePath: "songs/8.mp3", coverPath: "cover.jpg"}
+    {songName: "3.mp3", filePath: "3.mp3", coverPath: "cover.jpg"},
+    {songName: "4.mp3", filePath: "4.mp3", coverPath: "cover.jpg"},
+    {songName: "5.mp3", filePath: "5.mp3", coverPath: "cover.jpg"},
+    {songName: "6.mp3", filePath: "6.mp3", coverPath: "cover.jpg"},
+    {songName: "7.mp3", filePath: "7.mp3", coverPath: "cover.jpg"},
+    {songName: "7.mp3", filePath: "8.mp3", coverPath: "cover.jpg"}
 ]
 
 songItems.forEach((element,i)=>{
@@ -64,7 +64,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         // console.log(e.target);
         e.target.classList.remove('fa-play')
         e.target.classList.add('fa-pause')
-        audioElement.src = `songs/${songIndex+1}.mp3`;
+        audioElement.src = `${songIndex+1}.mp3`;
         audioElement.play();
         audioElement.currentTime = 0;
         masterPlay.classList.remove('fa-play')
@@ -81,7 +81,7 @@ document.getElementById('next').addEventListener('click',()=>{
 
         songIndex+=1;
     }
-    audioElement.src = `songs/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.play();
     audioElement.currentTime = 0;
     masterPlay.classList.remove('fa-play')
@@ -95,7 +95,7 @@ document.getElementById('previous').addEventListener('click',()=>{
 
         songIndex-=1;
     }
-    audioElement.src = `songs/${songIndex+1}.mp3`;
+    audioElement.src = `${songIndex+1}.mp3`;
     audioElement.play();
     audioElement.currentTime = 0;
     masterPlay.classList.remove('fa-play')
